@@ -50,14 +50,14 @@ const Feats = () => {
 			>	
     
 				{FEATS.map((feat)=>(
-            <SwiperSlide   key={feat.id}  >
+            <SwiperSlide className=""   key={feat.id}  >
                  	<div
                 
                    data-aos="fade-up"
-                   className="w-full cursor-grab bg-background shadow-lg rounded-2xl p-6 h-[420px] flex flex-col justify-between hover:shadow-2xl transition-shadow duration-300 group dot-bg"
+                   className="w-full cursor-grab bg-background rounded-2xl p-6 h-[420px] flex flex-col justify-between hover:shadow-2xl transition-shadow duration-300 group dot-bg  "
                  >
                    {/* Image Section */}
-                   <div className="overflow-hidden shadow-lg rounded-xl">
+                   <div className="overflow-hidden border-2 shadow-lg rounded-xl">
                      <img
                        src={feat.image}
                        className="w-full rounded-lg transition-transform duration-500 group-hover:scale-105"
@@ -67,15 +67,15 @@ const Feats = () => {
        
                    {/* Content */}
                    <div className="mt-4 flex flex-col gap-3">
-                     <h3 className="text-lg font-main md:text-xl font-semibold text-gray-800 flex items-center gap-2">
+                     <h3 className="text-lg font-clash md:text-xl font-semibold text-gray-800 flex items-center gap-2">
                        {feat.title}
                      </h3>
                      <p className="text-gray-600 font-second text-sm md:text-base leading-relaxed">
                     {feat.description}
                      </p>
                    
-                     <p className="text-gray-700 font-second font-medium text-sm">
-                       <span className="font-semibold">{feat.details.label}</span>{feat.details.value}
+                     <p className="text-gray-700 font-clash font-medium text-sm">
+                       <span className="font-semibold">{feat.details.label} : </span>{feat.details.value}
                      </p>
                    </div>
                  </div>

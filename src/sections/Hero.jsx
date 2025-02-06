@@ -21,7 +21,7 @@ const Hero = () => {
       </motion.h2>
 
       {/* Infinite SplitText Animation for h1 */}
-      <h1 className="font-clash font-bold text-center text-[42px] mt-4 md:text-[54px] lg:text-[72px] text-black  leading-[1.1] md:leading-[1.2]">
+      <h1 className="font-clash font-bold text-center text-[42px] mt-4 md:text-[54px] lg:text-[72px] text-black  leading-[1.1] md:leading-[1]">
       <SplitText
           text="Full-stack  Web   Developer"
           className="inline-block"
@@ -40,7 +40,7 @@ const Hero = () => {
 
       {/* Animated Presence for p */}
       <motion.p
-        className="font-satoshi font-bold text-[#151515] text-center text-[18px] leading-4 tracking-wide text-xl mt-2"
+        className="font-satoshi font-semibold text-[#151515] text-center text-[18px] tracking-wider text-xl  leading-relaxed"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.5 }}
@@ -58,12 +58,14 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 1 }}
       >
-     <button className="font-clash flex items-center  font-semibold   text-white  text-base leading-none px-6 py-2 rounded-3xl bg-orange text-[18px] hover:bg-blue transition-colors duration-300 group">
+    <a href="#contact">
+    <button className="font-clash flex items-center  font-stretch-75%   text-white  text-base leading-none px-6 py-2 rounded-3xl bg-orange text-[18px] hover:bg-blue transition-colors duration-300 group">
    
-      {"Let's Connect"}
-    
-      <FontAwesomeIcon className='ml-6  font-thin transform  -rotate-45 transition-transform duration-300 group-hover:rotate-0' icon={faArrowRight} /> 
-    </button>
+   {"Let's Connect"}
+ 
+   <FontAwesomeIcon className='ml-6  font-thin transform  -rotate-45 transition-transform duration-300 group-hover:rotate-0' icon={faArrowRight} /> 
+ </button>
+    </a>
       </motion.div>
     </section>
   );
