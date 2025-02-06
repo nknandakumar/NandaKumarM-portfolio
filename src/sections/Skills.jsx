@@ -29,7 +29,7 @@ const Skills = () => {
            data-aos-easing="ease-in-out"
      
           className="border-2 border-gray-500 font-second rounded-lg p-5">
-            <h2 className="text-2xl font-semibold mt-[-38px] border-2 border-black bg-slate-50 mb-4">Frontend</h2>
+            <h2 className="text-2xl font-satoshi font-semibold mt-[-38px] border-2 border-black bg-slate-50 mb-4">Frontend</h2>
             <span className="h-5 bg-black w-1"></span>
             <div className="grid grid-cols-2">
               {FRONTEND_SKILLS.map((skill, index) => (
@@ -41,7 +41,7 @@ const Skills = () => {
           </div>
           {/** Backend Section */}
           <div data-aos="fade-up"            data-aos-easing="ease-in-out" className="border-2 border-gray-500 font-second rounded-lg p-5">
-            <h2 className="text-2xl font-semibold mt-[-38px] border-2 border-black bg-slate-50">Backend</h2>
+            <h2 className="text-2xl font-satoshi font-semibold mt-[-38px] border-2 border-black bg-slate-50">Backend</h2>
             <span className="h-2 bg-black my-[-20px]">|</span>
             <div className="grid grid-cols-2">
             {BACKEND_SKILLS.map((skill, index) => (
@@ -50,7 +50,7 @@ const Skills = () => {
                 </span>
               ))}
             </div>
-            <h2 className="text-2xl font-semibold border-2 border-black bg-slate-50 my-4">Database</h2>
+            <h2 className="text-2xl font-satoshi font-semibold border-2 border-black bg-slate-50 my-4">Database</h2>
             <div className="grid grid-cols-2">
             {DB.map((skill, index) => (
                 <span key={index} className={`skill ${skill.className}`}>

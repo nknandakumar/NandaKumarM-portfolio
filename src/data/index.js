@@ -1,14 +1,41 @@
 // Importing project images
-import jsProjectsImg from "../assets/images/projects/jsProjects.avif";
-import bcaNotesAppImg from "../assets/images/projects/bcaResource.avif";
-import agencyImg from "../assets/images/projects/spark-studio.avif";
+import jsProjectsImg from "../assets/Images/projects/jsProjects.avif";
+import bcaNotesAppImg from "../assets/Images/projects/bcaResource.avif";
+import agencyImg from "../assets/Images/projects/spark-studio.avif";
 
 // Importing feats images
-import hackathonImg from "../assets/images/feats/Hackathon1.avif";
-import webDevCertImg from "../assets/images/feats/WebDevCertificate.avif";
+import hackathonImg from "../assets/Images/feats/Hackathon1.avif";
+import webDevCertImg from "../assets/Images/feats/WebDevCertificate.avif";
 
 // Navigation Items
 export const NAV_ITEMS = ["Home", "About", "Skills", "Projects", "Feats", "Contact"];
+
+//Skills Section
+ //-- Font end 
+export const FRONTEND_SKILLS = [
+  { name: "HTML", className: "html" },
+  { name: "CSS", className: "css" },
+  { name: "JavaScript", className: "js" },
+  { name: "React", className: "react" },
+  { name: "Tailwind CSS", className: "tcss" },
+  { name: "Redux", className: "redux" }
+];
+//-- Back end
+export const BACKEND_SKILLS = [
+  { name: "Node Js", className: "node" },
+  { name: "Express Js", className: "express" },
+];
+//-- Data Base
+export const DB = [
+  { name: "SQL", className: "sql" },
+  { name: "Postgres SQL", className: "psql" },
+];
+
+
+
+
+
+
 
 // Projects Section
 export const PROJECTS = [
