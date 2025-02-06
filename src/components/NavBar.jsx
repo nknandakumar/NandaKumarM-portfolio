@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFire } from "@fortawesome/free-solid-svg-icons";
 import { NAV_ITEMS } from "../data";
-
+import { motion } from "framer-motion";
 const NavBar = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -49,11 +49,15 @@ const NavBar = () => {
 					{/* Desktop Menu */}
 					<ul className="hidden md:flex gap-8 select-none text-[16px] text-white">
 						{NAV_ITEMS.map((item) => (
-							<li key={item} className="cursor-pointer font-second leading-relaxed hover:text-[#ff4a23] transition-colors">
+							<motion.li 
+							whileHover={{ scale: 1.1 }}
+							whileTap={{ scale: 0.95 }}
+							transition={{ type: "spring", stiffness: 300 }}
+							key={item} className="cursor-pointer font-second leading-relaxed hover:text-[#ff4a23] transition-colors">
 								<a href={`#${item.toLowerCase()}`} onClick={(e) => handleNavClick(e, item)}>
 									{item}
 								</a>
-							</li>
+							</motion.li>
 						))}
 					</ul>
 
@@ -69,18 +73,18 @@ const NavBar = () => {
 
 				{/* Mobile Menu Overlay */}
 				<div
-					className={`fixed inset-0 bg-opacity-50 transition-opacity duration-300 md:hidden bg-[#3c3c3c] shadow-[inset_0_-6px_12px_rgba(255,255,255,0.3)] ${
+					className={`fixed inset-0 bg-opacity-50 transition-opacity duration-300 md:hidden bg-neutral-600  ${
 						isMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
 					}`}
 				>
-					<div className={`absolute top-20 left-1/2 -translate-x-1/2 w-[280px] bg-gray-800 rounded-lg shadow-lg transition-all duration-300 ${isMenuOpen ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0"}`}>
+					<div className={`absolute top-20 left-1/2 -translate-x-1/2 w-[280px] bg-[#3c3c3c] shadow-[inset_0_-6px_12px_rgba(255,255,255,0.3)]  rounded-lg  transition-all duration-300 ${isMenuOpen ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0"}`}>
 						<ul className="py-8 flex flex-col items-center gap-6 text-white font-semibold">
 							{NAV_ITEMS.map((item, index) => (
 								<li
 									key={index}
 									onClick={(e) => handleNavClick(e, item)}
 									className={`cursor-pointer hover:text-[#ff4a23] transition-colors w-full text-center ${
-										index === NAV_ITEMS.length - 1 ? "border-t border-gray-700 pt-6" : ""
+										index === NAV_ITEMS.length - 1 ? "border-t   border-gray-300 pt-6" : ""
 									}`}
 								>
 									<a href={`#${item.toLowerCase()}`}>{item}</a>

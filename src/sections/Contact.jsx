@@ -29,7 +29,7 @@ const Contact = () => {
 
       {/* Social Media Links with Staggered Animation */}
       <motion.div
-        className="flex space-x-4 sm:space-x-6 mt-8"
+        className="flex  space-x-4 sm:space-x-6 mt-8"
       >
         {SOCIAL_LINKS.map((link, index) => (
           <a
@@ -40,7 +40,7 @@ const Contact = () => {
           className="text-gray-400  hover:text-white transition duration-300"
 
         >
-          <FontAwesomeIcon icon={link.icon} className="w-10 h-10 sm:w-8 sm:h-8 border rounded-full px-1 py-4 " />
+          <FontAwesomeIcon icon={link.icon} className="w-6 h-6 border rounded-full px-1 py-2 " />
         </a>
         ))}
       </motion.div>

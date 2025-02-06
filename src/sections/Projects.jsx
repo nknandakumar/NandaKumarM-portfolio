@@ -39,6 +39,7 @@ const Projects = () => {
 							hidden: { opacity: 0, y: 50 },
 							visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
 						}}
+            
 						key={project.id}
 						className="w-full sticky border-4 border-white top-0 max-w-xs sm:mb-7 sm:max-w-sm md:max-w-md lg:max-w-lg bg-white shadow-lg rounded-2xl group hover:shadow-2xl transition-shadow duration-300 bg-[radial-gradient(circle,#80808040_1px,transparent_1px)] bg-[size:14px_14px] "
 					>
@@ -79,7 +80,7 @@ const Projects = () => {
 
 							{/* Buttons */}
 							<div className="flex font-clash gap-3 mt-4">
-								<a href={project.links.github}>
+								<a href={project.links.github} target="_blank" rel="noopener noreferrer">
 									<button className="flex items-center px-4 py-2 text-sm md:text-base rounded-xl bg-orange font-bold hover:bg-blue transition duration-300">
 										GitHub
 										<FontAwesomeIcon
@@ -88,7 +89,7 @@ const Projects = () => {
 										/>
 									</button>
 								</a>
-								<a href={project.links.live}>
+								<a href={project.links.live} target="_blank" rel="noopener noreferrer">
 									<button className="flex items-center px-4 py-2 text-sm md:text-base text-white font-medium rounded-xl bg-gray-900 hover:bg-gray-800 transition">
 										View
 										<FontAwesomeIcon

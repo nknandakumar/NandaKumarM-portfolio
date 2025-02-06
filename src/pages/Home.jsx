@@ -6,9 +6,27 @@ import Skills from '../sections/Skills';
 import Projects from '../sections/Projects';
 import Feats from '../sections/Feats';
 import Contact from "../sections/Contact"
+import { motion ,useScroll } from "motion/react"
+import { Lenis } from "@studio-freight/react-lenis";
 const Home = () => {
+  const { scrollYProgress } = useScroll()
   return (
-    <div>
+  <Lenis root >
+    <motion.div
+                id="scroll-indicator"
+                style={{
+                    scaleX: scrollYProgress,
+                    position: "fixed",
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    height: 15,
+                    originX: 0,
+                   
+                }}
+                className='mb-10 z-50 bg-pink-400 border-b-2 border-black'
+            />
+  <div>
       <NavBar/>
         <Hero/>
         <HeroImgs/>
@@ -18,6 +36,7 @@ const Home = () => {
         <Feats/>
         <Contact/>
     </div>
+  </Lenis>
   )
 }
 

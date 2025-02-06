@@ -40,7 +40,7 @@ const Hero = () => {
 
       {/* Animated Presence for p */}
       <motion.p
-        className="font-satoshi font-semibold text-[#151515] text-center text-[18px] tracking-wider text-xl  leading-relaxed"
+        className="font-satoshi font-semibold text-gray-600 text-center text-[18px] tracking-wider text-xl  leading-relaxed"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.5 }}
@@ -58,14 +58,18 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 1 }}
       >
-    <a href="#contact">
+    <motion.a 
+    whileHover={{ scale: 1.1 }}
+    whileTap={{ scale: 0.95 }}
+    transition={{ type: "spring", stiffness: 300 }}
+    href="#contact">
     <button className="font-clash flex items-center  font-stretch-75%   text-white  text-base leading-none px-6 py-2 rounded-3xl bg-orange text-[18px] hover:bg-blue transition-colors duration-300 group">
    
    {"Let's Connect"}
  
    <FontAwesomeIcon className='ml-6  font-thin transform  -rotate-45 transition-transform duration-300 group-hover:rotate-0' icon={faArrowRight} /> 
  </button>
-    </a>
+    </motion.a>
       </motion.div>
     </section>
   );
