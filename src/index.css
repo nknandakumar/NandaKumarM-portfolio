@@ -2,119 +2,129 @@
 
 /* Clash Display Font */
 @font-face {
-  font-family: 'ClashDisplay';
-  src: url('./assets/fonts/clash_display/fonts/ClashDisplay-Regular.woff2') format('woff2'),
-       url('./assets/fonts/clash_display/fonts/ClashDisplay-Regular.woff') format('woff');
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-}
- 
-@font-face {
-  font-family: 'ClashDisplay-Extralight';
-  src: url('./assets/fonts/clash_display/fonts/ClashDisplay-Extralight.woff2') format('woff2'),
-       url('./assets/fonts/clash_display/fonts/ClashDisplay-Extralight.woff') format('woff');
-  font-weight: 200;
-  font-display: swap;
-  font-style: normal;
+	font-family: "ClashDisplay";
+	src: url("./assets/fonts/clash_display/fonts/ClashDisplay-Regular.woff2")
+			format("woff2"),
+		url("./assets/fonts/clash_display/fonts/ClashDisplay-Regular.woff")
+			format("woff");
+	font-weight: 400;
+	font-display: swap;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'ClashDisplay';
-  src: url('./assets/fonts/clash_display/fonts/ClashDisplay-Light.woff2') format('woff2'),
-       url('./assets/fonts/clash_display/fonts/ClashDisplay-Light.woff') format('woff'),
-       url('./assets/fonts/clash_display/fonts/ClashDisplay-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-display: swap;
-  font-style: normal;
+	font-family: "ClashDisplay-Extralight";
+	src: url("./assets/fonts/clash_display/fonts/ClashDisplay-Extralight.woff2")
+			format("woff2"),
+		url("./assets/fonts/clash_display/fonts/ClashDisplay-Extralight.woff")
+			format("woff");
+	font-weight: 200;
+	font-display: swap;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'ClashDisplay';
-  src: url('./assets/fonts/clash_display/fonts/ClashDisplay-Regular.woff2') format('woff2'),
-       url('./assets/fonts/clash_display/fonts/ClashDisplay-Regular.woff') format('woff'),
-       url('./assets/fonts/clash_display/fonts/ClashDisplay-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
+	font-family: "ClashDisplay";
+	src: url("./assets/fonts/clash_display/fonts/ClashDisplay-Light.woff2")
+			format("woff2"),
+		url("./assets/fonts/clash_display/fonts/ClashDisplay-Light.woff")
+			format("woff"),
+		url("./assets/fonts/clash_display/fonts/ClashDisplay-Light.ttf")
+			format("truetype");
+	font-weight: 300;
+	font-display: swap;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'ClashDisplay';
-  src: url('./assets/fonts/clash_display/fonts/ClashDisplay-Medium.woff2') format('woff2'),
-       url('./assets/fonts/clash_display/fonts/ClashDisplay-Medium.woff') format('woff'),
-       url('./assets/fonts/clash_display/fonts/ClashDisplay-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-display: swap;
-  font-style: normal;
+	font-family: "ClashDisplay";
+	src: url("./assets/fonts/clash_display/fonts/ClashDisplay-Regular.woff2")
+			format("woff2"),
+		url("./assets/fonts/clash_display/fonts/ClashDisplay-Regular.woff")
+			format("woff"),
+		url("./assets/fonts/clash_display/fonts/ClashDisplay-Regular.ttf")
+			format("truetype");
+	font-weight: 400;
+	font-display: swap;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'ClashDisplay';
-  src: url('./assets/fonts/clash_display/fonts/ClashDisplay-Semibold.woff2') format('woff2'),
-       url('./assets/fonts/clash_display/fonts/ClashDisplay-Semibold.woff') format('woff'),
-       url('./assets/fonts/clash_display/fonts/ClashDisplay-Semibold.ttf') format('truetype');
-  font-weight: 600;
-  font-display: swap;
-  font-style: normal;
+	font-family: "ClashDisplay";
+	src: url("./assets/fonts/clash_display/fonts/ClashDisplay-Medium.woff2")
+			format("woff2"),
+		url("./assets/fonts/clash_display/fonts/ClashDisplay-Medium.woff")
+			format("woff"),
+		url("./assets/fonts/clash_display/fonts/ClashDisplay-Medium.ttf")
+			format("truetype");
+	font-weight: 500;
+	font-display: swap;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'ClashDisplay';
-  src: url('./assets/fonts/clash_display/fonts/ClashDisplay-Bold.woff2') format('woff2'),
-       url('./assets/fonts/clash_display/fonts/ClashDisplay-Bold.woff') format('woff'),
-       url('./assets/fonts/clash_display/fonts/ClashDisplay-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal;
+	font-family: "ClashDisplay";
+	src: url("./assets/fonts/clash_display/fonts/ClashDisplay-Semibold.woff2")
+			format("woff2"),
+		url("./assets/fonts/clash_display/fonts/ClashDisplay-Semibold.woff")
+			format("woff"),
+		url("./assets/fonts/clash_display/fonts/ClashDisplay-Semibold.ttf")
+			format("truetype");
+	font-weight: 600;
+	font-display: swap;
+	font-style: normal;
 }
 
-
-
+@font-face {
+	font-family: "ClashDisplay";
+	src: url("./assets/fonts/clash_display/fonts/ClashDisplay-Bold.woff2")
+			format("woff2"),
+		url("./assets/fonts/clash_display/fonts/ClashDisplay-Bold.woff")
+			format("woff"),
+		url("./assets/fonts/clash_display/fonts/ClashDisplay-Bold.ttf")
+			format("truetype");
+	font-weight: 700;
+	font-display: swap;
+	font-style: normal;
+}
 
 /* Satoshi Font */
 @font-face {
-  font-family: 'Satoshi';
-  src: url('./assets/fonts/satoshi/fonts/Satoshi-Regular.woff2') format('woff2'),
-       url('./assets/fonts/satoshi/fonts/Satoshi-Regular.woff') format('woff');
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
+	font-family: "Satoshi";
+	src: url("./assets/fonts/satoshi/fonts/Satoshi-Regular.woff2") format("woff2"),
+		url("./assets/fonts/satoshi/fonts/Satoshi-Regular.woff") format("woff");
+	font-weight: 400;
+	font-display: swap;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'Satoshi';
-  src: url('./assets/fonts/satoshi/fonts/Satoshi-Bold.woff2') format('woff2'),
-       url('./assets/fonts/satoshi/fonts/Satoshi-Bold.woff') format('woff');
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal;
+	font-family: "Satoshi";
+	src: url("./assets/fonts/satoshi/fonts/Satoshi-Bold.woff2") format("woff2"),
+		url("./assets/fonts/satoshi/fonts/Satoshi-Bold.woff") format("woff");
+	font-weight: 700;
+	font-display: swap;
+	font-style: normal;
 }
 
 /* Define Custom Font Utilities */
 @theme {
-  --font-clash: 'ClashDisplay', sans-serif;
-  --font-satoshi: 'Satoshi', sans-serif;
-  --color-orange: #ff4a23;
-  --color-black: #151515;
-  --color-blue: #774dff;
-  --color-background : #fffaf5
-  /* bounce animation */
-
+	--font-clash: "ClashDisplay", sans-serif;
+	--font-satoshi: "Satoshi", sans-serif;
+	--color-orange: #ff4a23;
+	--color-black: #151515;
+	--color-blue: #774dff;
+	--color-background: #fffaf5;
 }
 
 /* Custom Tailwind Font Classes */
 .font-clash {
-  font-family: var(--font-clash);
+	font-family: var(--font-clash);
 }
 
 .font-satoshi {
-  font-family: var(--font-satoshi);
+	font-family: var(--font-satoshi);
 }
-
-
-
-
 
 body {
 	scroll-behavior: smooth;
@@ -124,30 +134,107 @@ body {
 	@apply flex justify-center items-center;
 }
 
-
+/**/
+/*Bounce Animation*/
 @keyframes upDown {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-15px);
-  }
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-15px);
+	}
 }
 
 @keyframes downUp {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(15px);
-  }
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(15px);
+	}
 }
+
+/*Bounce animation end */
 
 /* Custom utility classes for animations */
 .animate-up-down {
-  animation: upDown 4s ease-in-out infinite;
+	animation: upDown 4s ease-in-out infinite;
 }
 
 .animate-down-up {
-  animation: downUp 4s ease-in-out infinite;
+	animation: downUp 4s ease-in-out infinite;
+}
+
+/**/
+
+
+.section-name{
+	@apply font-clash font-semibold text-[40px] md:text-[60px] mb-20 
+}
+
+nav ul li {
+	@apply cursor-pointer;
+}
+
+.dot-bg{
+ @apply	bg-[radial-gradient(circle,#80808040_1px,transparent_1px)] bg-[size:14px_14px]
+}
+
+/** Skills Section  */
+.skill {
+	@apply py-10 px-10 font-clash text-xl md:text-2xl flex justify-center items-center lg:text-2xl font-semibold border-2 border-black bg-center bg-no-repeat bg-contain overflow-hidden cursor-pointer transition-all duration-300;
+  }
+  
+  .skill span {
+	@apply transition-transform duration-300 ease-in-out;
+  }
+  
+  /* Ensure smooth rollback effect */
+  .skill:hover span {
+	@apply scale-110;
+  }
+  
+  
+
+.html {
+	background: orangered;
+}
+
+.css {
+	background: rgb(64, 190, 248);
+}
+
+.js {
+	background: yellow;
+}
+
+.react {
+	background-color: black;
+
+	color: rgb(255, 255, 255);
+}
+
+.tcss {
+	background-color: black;
+
+	color: beige;
+}
+
+.redux {
+	background-color: rgb(114, 114, 254);
+	color: beige;
+}
+.node {
+	background-color: yellowgreen;
+}
+.express {
+	background-color: rgb(255, 255, 119);
+}
+.sql {
+	background-color: blanchedalmond;
+}
+.psql {
+	background-color: rgb(127, 170, 255);
 }
