@@ -1,11 +1,11 @@
 // Importing project images
-import jsProjectsImg from "../assets/images/projects/js-projects.avif";
-import bcaNotesAppImg from "../assets/images/projects/bca-resource.avif";
+import jsProjectsImg from "../assets/images/projects/jsProjects.avif";
+import bcaNotesAppImg from "../assets/images/projects/bcaResource.avif";
 import agencyImg from "../assets/images/projects/spark-studio.avif";
 
 // Importing feats images
-import hackathonImg from "../assets/images/feats/hackathon.avif";
-import webDevCertImg from "../assets/images/feats/web-dev-certificate.avif";
+import hackathonImg from "../assets/images/feats/Hackathon1.avif";
+import webDevCertImg from "../assets/images/feats/WebDevCertificate.avif";
 
 // Navigation Items
 export const NAV_ITEMS = ["Home", "About", "Skills", "Projects", "Feats", "Contact"];

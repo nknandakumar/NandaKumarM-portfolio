@@ -1,1 +1,153 @@
 @import "tailwindcss";
+
+/* Clash Display Font */
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('./assets/fonts/clash_display/fonts/ClashDisplay-Regular.woff2') format('woff2'),
+       url('./assets/fonts/clash_display/fonts/ClashDisplay-Regular.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+ 
+@font-face {
+  font-family: 'ClashDisplay-Extralight';
+  src: url('./assets/fonts/clash_display/fonts/ClashDisplay-Extralight.woff2') format('woff2'),
+       url('./assets/fonts/clash_display/fonts/ClashDisplay-Extralight.woff') format('woff');
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('./assets/fonts/clash_display/fonts/ClashDisplay-Light.woff2') format('woff2'),
+       url('./assets/fonts/clash_display/fonts/ClashDisplay-Light.woff') format('woff'),
+       url('./assets/fonts/clash_display/fonts/ClashDisplay-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('./assets/fonts/clash_display/fonts/ClashDisplay-Regular.woff2') format('woff2'),
+       url('./assets/fonts/clash_display/fonts/ClashDisplay-Regular.woff') format('woff'),
+       url('./assets/fonts/clash_display/fonts/ClashDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('./assets/fonts/clash_display/fonts/ClashDisplay-Medium.woff2') format('woff2'),
+       url('./assets/fonts/clash_display/fonts/ClashDisplay-Medium.woff') format('woff'),
+       url('./assets/fonts/clash_display/fonts/ClashDisplay-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('./assets/fonts/clash_display/fonts/ClashDisplay-Semibold.woff2') format('woff2'),
+       url('./assets/fonts/clash_display/fonts/ClashDisplay-Semibold.woff') format('woff'),
+       url('./assets/fonts/clash_display/fonts/ClashDisplay-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('./assets/fonts/clash_display/fonts/ClashDisplay-Bold.woff2') format('woff2'),
+       url('./assets/fonts/clash_display/fonts/ClashDisplay-Bold.woff') format('woff'),
+       url('./assets/fonts/clash_display/fonts/ClashDisplay-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+
+
+
+/* Satoshi Font */
+@font-face {
+  font-family: 'Satoshi';
+  src: url('./assets/fonts/satoshi/fonts/Satoshi-Regular.woff2') format('woff2'),
+       url('./assets/fonts/satoshi/fonts/Satoshi-Regular.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('./assets/fonts/satoshi/fonts/Satoshi-Bold.woff2') format('woff2'),
+       url('./assets/fonts/satoshi/fonts/Satoshi-Bold.woff') format('woff');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* Define Custom Font Utilities */
+@theme {
+  --font-clash: 'ClashDisplay', sans-serif;
+  --font-satoshi: 'Satoshi', sans-serif;
+  --color-orange: #ff4a23;
+  --color-black: #151515;
+  --color-blue: #774dff;
+  --color-background : #fffaf5
+  /* bounce animation */
+
+}
+
+/* Custom Tailwind Font Classes */
+.font-clash {
+  font-family: var(--font-clash);
+}
+
+.font-satoshi {
+  font-family: var(--font-satoshi);
+}
+
+
+
+
+
+body {
+	scroll-behavior: smooth;
+}
+
+.center {
+	@apply flex justify-center items-center;
+}
+
+
+@keyframes upDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes downUp {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+}
+
+/* Custom utility classes for animations */
+.animate-up-down {
+  animation: upDown 4s ease-in-out infinite;
+}
+
+.animate-down-up {
+  animation: downUp 4s ease-in-out infinite;
+}
