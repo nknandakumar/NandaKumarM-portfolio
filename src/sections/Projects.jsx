@@ -80,7 +80,9 @@ const Projects = () => {
 
 							{/* Buttons */}
 							<div className="flex font-clash gap-3 mt-4">
-								<a className=" cursor-pointer" href={project.links.github} target="_blank" rel="noopener noreferrer">
+								<a  style={{
+    cursor: "url('/cursor.png'), auto",
+  }} className=" cursor-pointer" href={project.links.github} target="_blank" rel="noopener noreferrer">
 									<button className="flex items-center px-4 py-2 text-sm md:text-base rounded-xl bg-orange font-bold hover:bg-blue transition duration-300">
 										GitHub
 										<FontAwesomeIcon

@@ -128,9 +128,9 @@
 
 body {
 	scroll-behavior: smooth;
-  scroll-timeline: 2s ;
 }
 
+  
 .center {
 	@apply flex justify-center items-center;
 }

@@ -6,14 +6,19 @@ const CustomCursor = () => {
   const [size, setSize] = useState(24);
   const [isHoveringButton, setIsHoveringButton] = useState(false);
   const [isHoveringLink, setIsHoveringLink] = useState(false);
+  const [isVisible, setIsVisible] = useState(window.innerWidth > 768); // Hide on small screens
 
   useEffect(() => {
+    const handleResize = () => {
+      setIsVisible(window.innerWidth > 768);
+    };
+
     const moveCursor = (e) => {
       setPosition({ x: e.clientX, y: e.clientY });
     };
 
     const hoverButton = () => {
-      setSize(50); // Bigger cursor on hover
+      setSize(50);
       setIsHoveringButton(true);
     };
 
@@ -32,6 +37,7 @@ const CustomCursor = () => {
       setIsHoveringLink(false);
     };
 
+    window.addEventListener("resize", handleResize);
     window.addEventListener("mousemove", moveCursor);
     document.querySelectorAll("button").forEach((el) => {
       el.addEventListener("mouseenter", hoverButton);
@@ -43,6 +49,7 @@ const CustomCursor = () => {
     });
 
     return () => {
+      window.removeEventListener("resize", handleResize);
       window.removeEventListener("mousemove", moveCursor);
       document.querySelectorAll("button").forEach((el) => {
         el.removeEventListener("mouseenter", hoverButton);
@@ -55,6 +62,8 @@ const CustomCursor = () => {
     };
   }, []);
 
+  if (!isVisible) return null; // Hide cursor on mobile/tablet
+
   return (
     <motion.div
       className="fixed rounded-full pointer-events-none border"
@@ -64,11 +73,11 @@ const CustomCursor = () => {
         width: size,
         height: size,
         backgroundColor: isHoveringLink
-          ? "rgba(0, 0, 0, 0)" // Fully transparent on link hover
+          ? "rgba(0, 0, 0, 0)"
           : isHoveringButton
-          ? "rgba(0, 0, 0, 0.2)" // Slightly dark on button hover
-          : "rgba(0, 0, 0, 0.4)", // Default slightly dark
-        borderColor: isHoveringButton ? "border-gray-500" : "rgba(0, 0, 0, 0.5)",
+          ? "rgba(0, 0, 0, 0.2)"
+          : "rgba(0, 0, 0, 0.4)",
+        borderColor: isHoveringButton ? "black" : "rgba(0, 0, 0, 0.5)",
         borderWidth: isHoveringButton ? "2px" : "1px",
       }}
       transition={{ type: "spring", stiffness: 120, damping: 25 }}
