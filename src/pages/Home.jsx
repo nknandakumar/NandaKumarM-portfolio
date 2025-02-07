@@ -24,7 +24,7 @@ const Home = () => {
                     originX: 0,
                    
                 }}
-                className='mb-10 z-50 bg-pink-400 border-b-2 border-black'
+                className='mb-10 z-50 bg-pink-400 border-b-2 progress border-black'
             />
   <div>
       <NavBar/>
