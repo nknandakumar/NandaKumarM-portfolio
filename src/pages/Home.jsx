@@ -7,11 +7,11 @@ import Projects from '../sections/Projects';
 import Feats from '../sections/Feats';
 import Contact from "../sections/Contact"
 import { motion ,useScroll } from "motion/react"
-import { Lenis } from "@studio-freight/react-lenis";
+
 const Home = () => {
   const { scrollYProgress } = useScroll()
   return (
-  <Lenis root >
+  < >
     <motion.div
                 id="scroll-indicator"
                 style={{
@@ -36,7 +36,7 @@ const Home = () => {
         <Feats/>
         <Contact/>
     </div>
-  </Lenis>
+  </>
   )
 }
 
