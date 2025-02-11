@@ -39,7 +39,7 @@ const NavBar = () => {
 		<header className="fixed top-0 left-0 right-0 z-50">
 			<nav className="mx-4 md:mx-10 my-4">
 				<div className="flex justify-between font-main items-center p-6 rounded-2xl max-w-[700px] mx-auto bg-[#3c3c3c] shadow-[inset_0_-6px_19px_rgba(255,255,255,0.3)]">
-					<h1 className="font-bold text-2xl text-white">
+					<h1 className="font-bold font-clash text-2xl text-white">
 						<span className="text-[#ff4a23] mr-1">
 							<FontAwesomeIcon icon={faFire} />
 						</span>
@@ -53,7 +53,7 @@ const NavBar = () => {
 							whileHover={{ scale: 1.1 }}
 							whileTap={{ scale: 0.95 }}
 							transition={{ type: "spring", stiffness: 300 }}
-							key={item} className="cursor-pointer font-second leading-relaxed hover:text-[#ff4a23] transition-colors">
+							key={item} className="cursor-pointer font-satoshi leading-relaxed hover:text-orange transition-colors">
 								<a href={`#${item.toLowerCase()}`} onClick={(e) => handleNavClick(e, item)}>
 									{item}
 								</a>
