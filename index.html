@@ -70,14 +70,27 @@
 		<!---->
 
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-      
+
 		<title>Nanda Kumar M - Full Stack Developer</title>
-		<link rel="shortcut icon" href="/n.png" type="image/x-icon">
+		<link rel="shortcut icon" href="/n.png" type="image/x-icon" />
 		<link href="/dist/styles.css" rel="stylesheet" />
+		<!-- Google tag (gtag.js) -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-DEV62FEY8R"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "G-DEV62FEY8R");
+		</script>
 	</head>
 	<body>
 		<div id="root"></div>
 		<script type="module" src="/src/main.jsx"></script>
-		
 	</body>
 </html>
