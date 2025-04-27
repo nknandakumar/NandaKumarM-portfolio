@@ -42,6 +42,18 @@ export const DB = [
 export const PROJECTS = [
 	{
 		id: 1,
+		image: `https://ik.imagekit.io/6b0su29zd/Screenshot%202025-04-25%20125931.png?updatedAt=1745566224153`,
+		title: "LabSet - Programming Lab Assistant",
+		description:
+			"A comprehensive web application that consolidates programming lab resources for students. LabSet provides CMA and Python programs with live previews, AI explanations, and code editing capabilities in one accessible platform, eliminating the need for scattered PDFs and files.",
+		techStack: ["React","Tailwind", "Gemini AI API" ,"Node" ],
+		links: {
+			github: "https://github.com/nknandakumar/labprogramsapp",
+			live: "https://labset.netlify.app/",
+		},
+	},
+	{
+		id: 2,
 		image: agencyImg,
 		title: "Agency Landing Page",
 		description:
@@ -53,7 +65,7 @@ export const PROJECTS = [
 		},
 	},
 	{
-		id: 2,
+		id: 3,
 		image: jsProjectsImg,
 		title: "30 Days, 30 JavaScript Projects",
 		description:
@@ -65,7 +77,7 @@ export const PROJECTS = [
 		},
 	},
 	{
-		id: 3,
+		id: 4,
 		image: bcaNotesAppImg,
 		title: "Full-Stack Notes App",
 		description:
