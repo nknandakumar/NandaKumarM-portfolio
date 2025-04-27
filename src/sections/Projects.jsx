@@ -83,7 +83,7 @@ const Projects = () => {
 								<a  style={{
     cursor: "url('/cursor.png'), auto",
   }} className=" cursor-pointer" href={project.links.github} target="_blank" rel="noopener noreferrer">
-									<button className="flex items-center px-4 py-2 text-sm md:text-base rounded-xl bg-orange font-bold hover:bg-blue transition duration-300">
+									<button className="flex cursor-pointer items-center px-4 py-2 text-sm md:text-base rounded-xl bg-orange font-bold hover:bg-blue transition duration-300">
 										GitHub
 										<FontAwesomeIcon
 											className="ml-2 font-thin transform -rotate-45 transition-transform duration-300 group-hover:rotate-0"
@@ -92,7 +92,7 @@ const Projects = () => {
 									</button>
 								</a>
 								<a className=" cursor-pointer" href={project.links.live} target="_blank" rel="noopener noreferrer">
-									<button className="flex items-center px-4 py-2 text-sm md:text-base text-white font-medium rounded-xl bg-gray-900 hover:bg-gray-800 transition">
+									<button className="flex cursor-pointer items-center px-4 py-2 text-sm md:text-base text-white font-medium rounded-xl bg-gray-900 hover:bg-gray-800 transition">
 										View
 										<FontAwesomeIcon
 											className="ml-2 font-thin transform -rotate-45 transition-transform duration-300 group-hover:rotate-0"
