@@ -46,26 +46,40 @@ export const PROJECTS = [
 		title: "LabSet - Programming Lab Assistant",
 		description:
 			"A comprehensive web application that consolidates programming lab resources for students. LabSet provides CMA and Python programs with live previews, AI explanations, and code editing capabilities in one accessible platform, eliminating the need for scattered PDFs and files.",
-		techStack: ["React","Tailwind", "Gemini AI API" ,"Node" ],
+		techStack: ["React", "Tailwind", "Gemini AI API", "Node"],
 		links: {
 			github: "https://github.com/nknandakumar/labprogramsapp",
 			live: "https://labset.netlify.app/",
 		},
 	},
 	{
-		id: 2,
-		image: agencyImg,
-		title: "Agency Landing Page",
+		id: 3,
+		image:
+			"https://ik.imagekit.io/6b0su29zd/Screenshot%202025-07-22%20171727.png?updatedAt=1753290693730",
+		title: "An website for Creative Abacus Academy(Client Project)",
 		description:
-			"A creative and responsive landing page for an imaginary agency.",
-		techStack: ["React", "Tailwind CSS"],
+			" focusing on speed, clean design, and user-friendly experience. An institution that teaches Abacus with a passion for helping children master",
+		techStack: ["Next JS", "TypeScript", "Tailwind CSS", "GSAP"],
 		links: {
-			github: "https://github.com/nknandakumar/SparkStudio",
-			live: "https://spark-studio-nu.vercel.app/",
+			github: "https://github.com/nknandakumar/Creative_Abacus_Academy",
+			live: "https://www.creativeabacusacademy.com/",
 		},
 	},
 	{
-		id: 3,
+		id: 2,
+		image:
+			"https://ik.imagekit.io/6b0su29zd/Screenshot%202025-07-23%20223933.png?updatedAt=1753290590945",
+		title: "An website for Happy Bright kids school(Client Project)",
+		description:
+			" A modern, responsive website, focusing on speed, clean design, and user-friendly experience. .",
+		techStack: ["React", "Tailwind CSS"],
+		links: {
+			github: "https://github.com/nknandakumar/Happy_Bright_Kids_School",
+			live: "https://www.happybrightkids.in/",
+		},
+	},
+	{
+		id: 4,
 		image: jsProjectsImg,
 		title: "30 Days, 30 JavaScript Projects",
 		description:
@@ -77,7 +91,7 @@ export const PROJECTS = [
 		},
 	},
 	{
-		id: 4,
+		id: 5,
 		image: bcaNotesAppImg,
 		title: "Full-Stack Notes App",
 		description:
@@ -86,6 +100,18 @@ export const PROJECTS = [
 		links: {
 			github: "https://github.com/nknandakumar",
 			live: "https://bca-resources.netlify.app/",
+		},
+	},
+	{
+		id: 6,
+		image: agencyImg,
+		title: "Agency Landing Page",
+		description:
+			"A creative and responsive landing page for an imaginary agency.",
+		techStack: ["React", "Tailwind CSS"],
+		links: {
+			github: "https://github.com/nknandakumar/SparkStudio",
+			live: "https://spark-studio-nu.vercel.app/",
 		},
 	},
 ];
