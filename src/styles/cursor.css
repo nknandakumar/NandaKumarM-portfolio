@@ -1,0 +1,26 @@
+/* Custom cursor styles */
+
+/* Default cursor */
+html, body {
+  cursor: url('/cursor.png'), auto;
+}
+
+/* Pointer cursor for clickable elements */
+a, 
+button:not(:disabled), 
+[role="button"], 
+[onclick] {
+  cursor: url('/left-click.png'), pointer !important;
+}
+
+/* Disabled cursor for disabled elements */
+button:disabled, 
+[disabled] {
+  cursor: not-allowed !important;
+  opacity: 0.5;
+}
+
+/* Specific styles for project links */
+.project-link {
+  cursor: url('/left-click.png'), pointer !important;
+}

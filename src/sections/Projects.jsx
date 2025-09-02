@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faUserTie } from "@fortawesome/free-solid-svg-icons";
 import { PROJECTS } from "../data";
 
 const Projects = () => {
@@ -44,8 +44,14 @@ const Projects = () => {
 						className="w-full sticky border-4 border-white top-0 max-w-xs sm:mb-7 sm:max-w-sm md:max-w-md lg:max-w-lg bg-white shadow-lg rounded-2xl group hover:shadow-2xl transition-shadow duration-300 bg-[radial-gradient(circle,#80808040_1px,transparent_1px)] bg-[size:14px_14px] "
 					>
 						{/* Image Section */}
-						<div className="">
-							<div className="w-full rounded-tl-2xl  rounded-tr-2xl overflow-hidden  ">
+						<div className="relative group">
+							{project.client && (
+								<span className="absolute -mt-3 ml-4  bg-gradient-to-r from-blue-50 to-orange-500 text-black text-xs font-bold px-3 py-1 font-satoshi border border-black rounded-2xl flex items-center gap-1 z-10 shadow-lg transform transition-all duration-300 group-hover:scale-105">
+									<FontAwesomeIcon icon={faUserTie} className="h-3 w-3" />
+									Client Project
+								</span>
+							)}
+							<div className="w-full rounded-tl-2xl rounded-tr-2xl overflow-hidden border-b border-gray-200">
 								<img
 									src={project.image}
 									className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
@@ -80,10 +86,20 @@ const Projects = () => {
 
 							{/* Buttons */}
 							<div className="flex font-clash gap-3 mt-4">
-								<a  style={{
-    cursor: "url('/cursor.png'), auto",
-  }} className=" cursor-pointer" href={project.links.github} target="_blank" rel="noopener noreferrer">
-									<button className="flex cursor-pointer items-center px-4 py-2 text-sm md:text-base rounded-xl bg-orange font-bold hover:bg-blue transition duration-300">
+								<a 
+									className={`project-link ${!project.links.github ? 'pointer-events-none opacity-50' : ''}`} 
+									href={project.links.github || '#'} 
+									target="_blank" 
+									rel="noopener noreferrer"
+								>
+									<button 
+										className={`flex items-center px-4 py-2 text-sm md:text-base rounded-xl font-bold transition duration-300 ${
+										project.links.github 
+										? 'bg-gradient-to-l from-blue-50 to-orange-500 hover:bg-gradient-to-r from-orange-50 to-orange-500 text-black border border-black' 
+										: 'bg-gray-300 text-gray-900 cursor-not-allowed'
+									}`}
+										disabled={!project.links.github}
+									>
 										GitHub
 										<FontAwesomeIcon
 											className="ml-2 font-thin transform -rotate-45 transition-transform duration-300 group-hover:rotate-0"
@@ -91,8 +107,20 @@ const Projects = () => {
 										/>
 									</button>
 								</a>
-								<a className=" cursor-pointer" href={project.links.live} target="_blank" rel="noopener noreferrer">
-									<button className="flex cursor-pointer items-center px-4 py-2 text-sm md:text-base text-white font-medium rounded-xl bg-gray-900 hover:bg-gray-800 transition">
+								<a 
+									className={`project-link ${!project.links.live ? 'pointer-events-none opacity-50' : ''}`} 
+									href={project.links.live || '#'} 
+									target="_blank" 
+									rel="noopener noreferrer"
+								>
+									<button 
+										className={`flex items-center px-4 py-2 text-sm md:text-base font-medium rounded-xl transition ${
+										project.links.live 
+										? 'bg-gradient-to-l from-neutral-100 to-gray-500 hover:bg-gradient-to-r  text-black border border-black' 
+										: 'bg-gray-300 text-gray-900 cursor-not-allowed'
+									}`}
+										disabled={!project.links.live}
+									>
 										View
 										<FontAwesomeIcon
 											className="ml-2 font-thin transform -rotate-45 transition-transform duration-300 group-hover:rotate-0"
