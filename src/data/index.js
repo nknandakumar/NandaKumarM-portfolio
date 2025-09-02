@@ -117,31 +117,7 @@ export const PROJECTS = [
 			github: "https://github.com/nknandakumar/30-Days-30-JS-Projects",
 			live: "https://30-days-30-js-projects-ruby.vercel.app/",
 		},
-	},
-	{
-		id: 5,
-		image: bcaNotesAppImg,
-		title: "Full-Stack Notes App",
-		description:
-			"A resource hub containing question papers, notes, programs, and an AI chatbot.",
-		techStack: ["React", "Tailwind CSS", "Node.js", "PostgreSQL"],
-		links: {
-			github: "https://github.com/nknandakumar",
-			live: "https://bca-resources.netlify.app/",
-		},
-	},
-	{
-		id: 6,
-		image: agencyImg,
-		title: "Agency Landing Page",
-		description:
-			"A creative and responsive landing page for an imaginary agency.",
-		techStack: ["React", "Tailwind CSS"],
-		links: {
-			github: "https://github.com/nknandakumar/SparkStudio",
-			live: "https://spark-studio-nu.vercel.app/",
-		},
-	},
+	}
 
 ];
 
