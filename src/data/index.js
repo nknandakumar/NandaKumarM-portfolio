@@ -42,12 +42,12 @@ export const DB = [
 export const PROJECTS = [
 	{
 		id: 1,
-		client:true,
+		client: true,
 		image: `https://ik.imagekit.io/6b0su29zd/WheelsWeb_thumbnail.png?updatedAt=1756819090448`,
 		title: "Wheels Web, Lead & Disbursement Management System",
 		description:
 			"A web applicationto manage leads and disbursements efficiently with Login, Dashboard, and Features include secure auth, data entry, print option, and real-time database tables.",
-		techStack: ["Next JS", "Tailwind",  "Postgres SQL","Neon DB"],
+		techStack: ["Next JS", "Tailwind", "Postgres SQL", "Neon DB"],
 		links: {
 			github: "",
 			live: "",
@@ -55,7 +55,7 @@ export const PROJECTS = [
 	},
 	{
 		id: 2,
-		client:false,
+		client: false,
 		image: `https://ik.imagekit.io/6b0su29zd/Screenshot%202025-04-25%20125931.png?updatedAt=1745566224153`,
 		title: "LabSet - Programming Lab Assistant",
 		description:
@@ -68,10 +68,10 @@ export const PROJECTS = [
 	},
 	{
 		id: 3,
-<<<<<<< HEAD
-		client:true,
-=======
->>>>>>> 0b5d0f0a89857a32e94bff26a7f9fdbaa0fac71c
+
+		client: true,
+
+
 		image:
 			"https://ik.imagekit.io/6b0su29zd/Screenshot%202025-07-22%20171727.png?updatedAt=1753290693730",
 		title: "An website for Creative Abacus Academy(Client Project)",
@@ -84,12 +84,12 @@ export const PROJECTS = [
 		},
 	},
 	{
-<<<<<<< HEAD
+
 		id: 4,
-		client:true,
-=======
+		client: true,
+
 		id: 2,
->>>>>>> 0b5d0f0a89857a32e94bff26a7f9fdbaa0fac71c
+
 		image:
 			"https://ik.imagekit.io/6b0su29zd/Screenshot%202025-07-23%20223933.png?updatedAt=1753290590945",
 		title: "An website for Happy Bright kids school(Client Project)",
@@ -102,12 +102,12 @@ export const PROJECTS = [
 		},
 	},
 	{
-<<<<<<< HEAD
+
 		id: 5,
-		client:false,
-=======
+		client: false,
+
 		id: 4,
->>>>>>> 0b5d0f0a89857a32e94bff26a7f9fdbaa0fac71c
+
 		image: jsProjectsImg,
 		title: "30 Days, 30 JavaScript Projects",
 		description:
@@ -118,8 +118,6 @@ export const PROJECTS = [
 			live: "https://30-days-30-js-projects-ruby.vercel.app/",
 		},
 	},
-<<<<<<< HEAD
-=======
 	{
 		id: 5,
 		image: bcaNotesAppImg,
@@ -144,7 +142,7 @@ export const PROJECTS = [
 			live: "https://spark-studio-nu.vercel.app/",
 		},
 	},
->>>>>>> 0b5d0f0a89857a32e94bff26a7f9fdbaa0fac71c
+
 ];
 
 // Feats Section
