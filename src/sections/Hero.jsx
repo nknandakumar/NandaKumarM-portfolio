@@ -63,7 +63,7 @@ const Hero = () => {
           whileTap={{ scale: 0.95 }}
           transition={{ type: "spring", stiffness: 300 }}
           href="#contact">
-          <button className="font-clash flex items-center  font-stretch-75%     text-base leading-none px-6 py-2 rounded-3xl bg-orange text-white hover:text-black text-[18px] hover:bg-gradient-to-r hover:from-orange-50 hover:to-blue transition-colors duration-300 group">
+          <button className="font-clash flex items-center  font-stretch-75%     text-base leading-none px-6 py-2 rounded-3xl bg-orange text-white  hover:text-black text-[18px] hover:bg-gradient-to-r hover:from-orange-50 hover:to-blue transition-colors duration-300 group">
 
             {"Let's Connect"}
 
