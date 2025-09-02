@@ -68,7 +68,10 @@ export const PROJECTS = [
 	},
 	{
 		id: 3,
+<<<<<<< HEAD
 		client:true,
+=======
+>>>>>>> 0b5d0f0a89857a32e94bff26a7f9fdbaa0fac71c
 		image:
 			"https://ik.imagekit.io/6b0su29zd/Screenshot%202025-07-22%20171727.png?updatedAt=1753290693730",
 		title: "An website for Creative Abacus Academy(Client Project)",
@@ -81,8 +84,12 @@ export const PROJECTS = [
 		},
 	},
 	{
+<<<<<<< HEAD
 		id: 4,
 		client:true,
+=======
+		id: 2,
+>>>>>>> 0b5d0f0a89857a32e94bff26a7f9fdbaa0fac71c
 		image:
 			"https://ik.imagekit.io/6b0su29zd/Screenshot%202025-07-23%20223933.png?updatedAt=1753290590945",
 		title: "An website for Happy Bright kids school(Client Project)",
@@ -95,8 +102,12 @@ export const PROJECTS = [
 		},
 	},
 	{
+<<<<<<< HEAD
 		id: 5,
 		client:false,
+=======
+		id: 4,
+>>>>>>> 0b5d0f0a89857a32e94bff26a7f9fdbaa0fac71c
 		image: jsProjectsImg,
 		title: "30 Days, 30 JavaScript Projects",
 		description:
@@ -107,6 +118,33 @@ export const PROJECTS = [
 			live: "https://30-days-30-js-projects-ruby.vercel.app/",
 		},
 	},
+<<<<<<< HEAD
+=======
+	{
+		id: 5,
+		image: bcaNotesAppImg,
+		title: "Full-Stack Notes App",
+		description:
+			"A resource hub containing question papers, notes, programs, and an AI chatbot.",
+		techStack: ["React", "Tailwind CSS", "Node.js", "PostgreSQL"],
+		links: {
+			github: "https://github.com/nknandakumar",
+			live: "https://bca-resources.netlify.app/",
+		},
+	},
+	{
+		id: 6,
+		image: agencyImg,
+		title: "Agency Landing Page",
+		description:
+			"A creative and responsive landing page for an imaginary agency.",
+		techStack: ["React", "Tailwind CSS"],
+		links: {
+			github: "https://github.com/nknandakumar/SparkStudio",
+			live: "https://spark-studio-nu.vercel.app/",
+		},
+	},
+>>>>>>> 0b5d0f0a89857a32e94bff26a7f9fdbaa0fac71c
 ];
 
 // Feats Section
