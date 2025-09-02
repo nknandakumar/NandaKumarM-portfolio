@@ -7,7 +7,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const Hero = () => {
   return (
-      <section id="home"  className="Hero-sec center px-2 flex-col bg-white py-52px space-y-6 md:px-20 md:pt-24px h-[100vh] sticky top-0 bg-[radial-gradient(circle,#80808070_1px,transparent_1px)] bg-[size:14px_14px]
+    <section id="home" className="Hero-sec center px-2 flex-col bg-white py-52px space-y-6 md:px-20 md:pt-24px h-[100vh] sticky top-0 bg-[radial-gradient(circle,#80808070_1px,transparent_1px)] bg-[size:14px_14px]
 
   ">
       {/* Animated Presence for h2 */}
@@ -22,7 +22,7 @@ const Hero = () => {
 
       {/* Infinite SplitText Animation for h1 */}
       <h1 className="font-clash font-bold text-center text-[42px] mt-4 md:text-[54px] lg:text-[72px] text-black  leading-[1.1] md:leading-[1]">
-      <SplitText
+        <SplitText
           text="Full-stack  Web   Developer"
           className="inline-block"
           delay={100}
@@ -58,18 +58,18 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 1 }}
       >
-    <motion.a 
-    whileHover={{ scale: 1.1 }}
-    whileTap={{ scale: 0.95 }}
-    transition={{ type: "spring", stiffness: 300 }}
-    href="#contact">
-    <button className="font-clash flex items-center  font-stretch-75%   text-white  text-base leading-none px-6 py-2 rounded-3xl bg-orange text-[18px] hover:bg-blue transition-colors duration-300 group">
-   
-   {"Let's Connect"}
- 
-   <FontAwesomeIcon className='ml-6  font-thin transform  -rotate-45 transition-transform duration-300 group-hover:rotate-0' icon={faArrowRight} /> 
- </button>
-    </motion.a>
+        <motion.a
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          transition={{ type: "spring", stiffness: 300 }}
+          href="#contact">
+          <button className="font-clash flex items-center  font-stretch-75%     text-base leading-none px-6 py-2 rounded-3xl bg-orange text-white hover:text-black text-[18px] hover:bg-gradient-to-r hover:from-orange-50 hover:to-blue transition-colors duration-300 group">
+
+            {"Let's Connect"}
+
+            <FontAwesomeIcon className='ml-6  font-thin transform  -rotate-45 transition-transform duration-300 group-hover:rotate-0' icon={faArrowRight} />
+          </button>
+        </motion.a>
       </motion.div>
     </section>
   );
