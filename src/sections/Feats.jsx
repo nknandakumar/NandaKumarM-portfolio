@@ -54,19 +54,19 @@ const Feats = () => {
                  	<div
                 
                    data-aos="fade-up"
-                   className="w-full cursor-grab bg-background rounded-2xl p-6 h-[420px] flex flex-col justify-between hover:shadow-2xl transition-shadow duration-300 group dot-bg  "
+                   className="w-full cursor-grab bg-background rounded-2xl p- h-[420px] flex flex-col justify-between hover:shadow-2xl transition-shadow duration-300 group dot-bg  "
                  >
                    {/* Image Section */}
-                   <div className="overflow-hidden border-2 shadow-lg rounded-xl">
+                   <div className="overflow-hidden rounded-xl">
                      <img
                        src={feat.image}
-                       className="w-full rounded-lg transition-transform duration-500 group-hover:scale-105"
+                       className="w-full rounded-lg transition-transform duration-500 object-cover  group-hover:scale-105"
                        alt="Hackathon Achievement"
                      />
                    </div>
        
                    {/* Content */}
-                   <div className="mt-4 flex flex-col gap-3">
+                   <div className="mt-4 flex flex-col p-5 gap-3">
                      <h3 className="text-lg font-clash md:text-xl font-semibold text-gray-800 flex items-center gap-2">
                        {feat.title}
                      </h3>

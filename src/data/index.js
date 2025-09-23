@@ -43,7 +43,7 @@ export const PROJECTS = [
 	{
 		id: 1,
 		client: true,
-		image: `https://ik.imagekit.io/6b0su29zd/WheelsWeb_thumbnail.png?updatedAt=1756819090448`,
+		image: `https://ik.imagekit.io/6b0su29zd/wheelswebThumbnail.png?updatedAt=1758606467146`,
 		title: "Wheels Web, Lead & Disbursement Management System",
 		description:
 			"A web applicationto manage leads and disbursements efficiently with Login, Dashboard, and Features include secure auth, data entry, print option, and real-time database tables.",
@@ -56,7 +56,7 @@ export const PROJECTS = [
 	{
 		id: 2,
 		client: false,
-		image: `https://ik.imagekit.io/6b0su29zd/Screenshot%202025-04-25%20125931.png?updatedAt=1745566224153`,
+		image: `https://ik.imagekit.io/6b0su29zd/LabSet_Thumbnail.png?updatedAt=1758606466992`,
 		title: "LabSet - Programming Lab Assistant",
 		description:
 			"A comprehensive web application that consolidates programming lab resources for students. LabSet provides CMA and Python programs with live previews, AI explanations, and code editing capabilities in one accessible platform, eliminating the need for scattered PDFs and files.",

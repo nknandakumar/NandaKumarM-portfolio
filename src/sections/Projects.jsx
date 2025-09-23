@@ -41,26 +41,28 @@ const Projects = () => {
 						}}
             
 						key={project.id}
-						className="w-full sticky border-4 border-white top-0 max-w-xs sm:mb-7 sm:max-w-sm md:max-w-md lg:max-w-lg bg-white shadow-lg rounded-2xl group hover:shadow-2xl transition-shadow duration-300 bg-[radial-gradient(circle,#80808040_1px,transparent_1px)] bg-[size:14px_14px] "
+						className="w-full  top-0 max-w-xs sm:mb-7 sm:max-w-sm md:max-w-md lg:max-w-lg bg-white shadow-lg rounded-2xl group hover:shadow-2xl transition-shadow duration-300 bg-[radial-gradient(circle,#80808040_1px,transparent_1px)] bg-[size:14px_14px] "
 					>
 						{/* Image Section */}
-						<div className="relative group">
+						<div className="relative group ">
 							{project.client && (
-								<span className="absolute -mt-3 ml-4  bg-gradient-to-r from-blue-50 to-orange-500 text-black text-xs font-bold px-3 py-1 font-satoshi border border-black rounded-2xl flex items-center gap-1 z-10 shadow-lg transform transition-all duration-300 group-hover:scale-105">
+								<span className="absolute -mt-3 ml-4 hover:scale-105  bg-gradient-to-r from-blue-50 to-orange-500 text-black text-xs font-bold px-3 py-1 font-satoshi border border-black rounded-2xl flex items-center gap-1 z-10 shadow-lg transform transition-all duration-300 group-hover:scale-105">
 									<FontAwesomeIcon icon={faUserTie} className="h-3 w-3" />
 									Client Project
 								</span>
 							)}
-							<div className="w-full rounded-tl-2xl rounded-tr-2xl overflow-hidden border-b border-gray-200">
+							<div className="w-full rounded-tl-2xl rounded-tr-2xl overflow-hidden relative">
 								<img
 									src={project.image}
-									className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+									className="block w-full h-[250px] object-cover  object-center transition-transform duration-500 group-hover:scale-105"
 									alt="Project Thumbnail"
 								/>
+								{/* Premium bottom vignette: smooth, responsive height, fades on hover */}
+								<div className="pointer-events-none absolute inset-x-0 bottom-0 h-[60%] md:h-[65%] opacity-100 group-hover:opacity-0 transition-opacity duration-300 ease-out bg-[linear-gradient(to_top,rgba(0,0,0,0.75)_0%,rgba(0,0,0,0.5)_35%,rgba(0,0,0,0.22)_65%,rgba(0,0,0,0)_100%)] backdrop-blur-[1px]"></div>
 							</div>
 						</div>
-            <hr />
-          	{/* Content */}
+          		
+						{/* Content */}
 						<div className=" p-5 ">
 						
 							<h3 className="text-xl font-clash md:text-2xl font-semibold text-gray-800 mt-4">

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import ProfileImage from "../assets/Images/profileImage.jpg"
+import ProfileImage from "../assets/Images/Profile_image.jpg"
 const AnimatedText = ({ text, className, delay = 0 }) => {
   // Split text into words
   const words = text.split(" ");
@@ -83,7 +83,7 @@ const About = () => {
               <img 
                 src={ProfileImage}
                 alt="Nanda Kumar M" 
-                className="w-full h-[350px] md:h-[400px] object-cover object-center transform group-hover:scale-105 transition-transform duration-500"
+                className="w-full   object-cover transform group-hover:scale-105 transition-transform duration-500"
               />
             </div>
           </motion.div>
