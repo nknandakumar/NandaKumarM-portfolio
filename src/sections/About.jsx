@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import ProfileImage from "../assets/Images/profileImage.jpg"
+import ProfileImage from "../assets/Images/Profile_image.jpg"
 const AnimatedText = ({ text, className, delay = 0 }) => {
   // Split text into words
   const words = text.split(" ");
